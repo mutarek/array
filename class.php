@@ -1,5 +1,4 @@
 <?php
-
 $productList = 
 [
 	[
@@ -28,43 +27,10 @@ $productList =
 	]
 ];
 
-
-$markList = 
-[
-	"tarek"=>
-	[
-		'math'=> 70,
-		'eng'=> 80,
-
-	],
-	"heli"=>
-	[
-		'math'=> 70,
-		'eng'=> 80,
-
-	],
-	"beli"=>
-	[
-		'math'=> 70,
-		'eng'=> 80,
-
-	]
-];
-
-echo "<pre>";
-print_r($markList);
-echo "</pre>";
-
-echo $markList['tarek']['math'];
-
-
-echo "<pre>";
-print_r($productList);
-echo "</pre>";
-
 for ($i=0; $i <sizeof($productList) ; $i++) { 
-	foreach ($productList[$i] as $value) {
-		echo "$value";
+	foreach ($productList[$i] as $key => $value) {
+		$size = $key;
+		
 	}
 }
 
